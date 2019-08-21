@@ -67,6 +67,8 @@
     <Element>
       <consumerName text="StrategicView_Sprite"/>
       <relativeArtDefPaths>
+        <Element text="StrategicView.artdef"/>
+        <Element text="Buildings.artdef"/>
       </relativeArtDefPaths>
       <libraryDependencies>
         <Element text="StrategicView_Sprite"/>
@@ -159,6 +161,7 @@
     <Element>
       <consumerName text="WonderMovie"/>
       <relativeArtDefPaths>
+        <Element text="WonderMovie.artdef"/>
       </relativeArtDefPaths>
       <libraryDependencies>
         <Element text="WonderMovie"/>
@@ -500,6 +503,7 @@
     <Element>
       <libraryName text="StrategicView_Sprite"/>
       <relativePackagePaths>
+        <Element text="strategicview/strategicview_buildings"/>
       </relativePackagePaths>
     </Element>
     <Element>
@@ -535,6 +539,7 @@
     <Element>
       <libraryName text="TileBase"/>
       <relativePackagePaths>
+        <Element text="landmarks/tilebases"/>
       </relativePackagePaths>
     </Element>
     <Element>
@@ -545,6 +550,7 @@
     <Element>
       <libraryName text="UITexture"/>
       <relativePackagePaths>
+        <Element text="UITextures"/>
       </relativePackagePaths>
     </Element>
     <Element>
@@ -570,6 +576,7 @@
     <Element>
       <libraryName text="WonderMovie"/>
       <relativePackagePaths>
+        <Element text="WonderMovie"/>
       </relativePackagePaths>
     </Element>
   </gameLibraries>

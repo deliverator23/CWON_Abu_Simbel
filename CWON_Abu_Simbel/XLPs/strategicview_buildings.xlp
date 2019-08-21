@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<AssetObjects..XLP>
+	<m_Version>
+		<major>4</major>
+		<minor>0</minor>
+		<build>315</build>
+		<revision>805</revision>
+	</m_Version>
+	<m_ClassName text="StrategicView_Sprite"/>
+	<m_PackageName text="strategicview/strategicview_buildings"/>
+	<m_Entries>
+		<Element>
+			<m_EntryID text="Wonders_Abu_Simbel_Revealed"/>
+			<m_ObjectName text="Wonders_Abu_Simbel_Revealed"/>
+		</Element>
+		<Element>
+			<m_EntryID text="Wonders_Abu_Simbel_Visible"/>
+			<m_ObjectName text="Wonders_Abu_Simbel_Visible"/>
+		</Element>
+		<Element>
+			<m_EntryID text="Wonders_Abu_Simbel_UnderConstruction_Visible"/>
+			<m_ObjectName text="Wonders_Abu_Simbel_UnderConstruction_Visible"/>
+		</Element>
+		<Element>
+			<m_EntryID text="Wonders_Abu_Simbel_UnderConstruction_Revealed"/>
+			<m_ObjectName text="Wonders_Abu_Simbel_UnderConstruction_Revealed"/>
+		</Element>
+		<Element>
+			<m_EntryID text="Wonders_Abu_Simbel_Pillaged_Visible"/>
+			<m_ObjectName text="Wonders_Abu_Simbel_Pillaged_Visible"/>
+		</Element>
+		<Element>
+			<m_EntryID text="Wonders_Abu_Simbel_Pillaged_Revealed"/>
+			<m_ObjectName text="Wonders_Abu_Simbel_Pillaged_Revealed"/>
+		</Element>
+	</m_Entries>
+	<m_AllowedPlatforms>
+		<Element>WINDOWS</Element>
+		<Element>LINUX</Element>
+		<Element>MACOS</Element>
+		<Element>IOS</Element>
+	</m_AllowedPlatforms>
+</AssetObjects..XLP>
+

@@ -18,12 +18,39 @@
     <CompatibleVersions>1.2,2.0</CompatibleVersions>
     <AssemblyName>CWON_Abu_Simbel</AssemblyName>
     <RootNamespace>CWON_Abu_Simbel</RootNamespace>
+    <InGameActionData><![CDATA[<InGameActions><UpdateArt id="Abu_Art"><File>(Mod Art Dependency File)</File></UpdateArt><UpdateDatabase id="Abu_DB"><File>Data/Abu_Simbel_Gameplay.sql</File></UpdateDatabase><UpdateIcons id="Abu_Icons"><File>Icons/Abu_Simbel_Icons.xml</File></UpdateIcons><UpdateText id="Abu_Text"><File>Text/Abu_Simbel_Text.xml</File></UpdateText></InGameActions>]]></InGameActionData>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Default' ">
     <OutputPath>.</OutputPath>
   </PropertyGroup>
   <ItemGroup>
     <None Include="CWON_Abu_Simbel.Art.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ArtDefs\Buildings.artdef">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ArtDefs\StrategicView.artdef">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ArtDefs\WonderMovie.artdef">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Data\Abu_Simbel_Gameplay.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Icons\Abu_Simbel_Icons.xml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Text\Abu_Simbel_Text.xml">
+      <SubType>Content</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ArtDefs\" />
+    <Folder Include="Data\" />
+    <Folder Include="Icons\" />
+    <Folder Include="Text\" />
   </ItemGroup>
   <Import Project="$(MSBuildLocalExtensionPath)Civ6.targets" />
 </Project>

@@ -315,7 +315,7 @@
 							<z>0.000000</z>
 						</m_orientation>
 						<m_Name text="Abu_Simbel_HB"/>
-						<m_BoneName text="WON_Bone"/>
+						<m_BoneName text="HB_Bone"/>
 						<m_ModelInstanceName text="WON_Dummy"/>
 						<m_scale>1.000000</m_scale>
 					</Element>

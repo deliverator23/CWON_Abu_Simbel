@@ -20,12 +20,24 @@ INSERT INTO Modifiers (ModifierId, ModifierType, RunOnce, Permanent) VALUES ('AB
 INSERT INTO  ModifierArguments (ModifierId, Name, Value) VALUES ('ABU_SIMBEL_CITIES_FREE_GRANARY', 'ModifierId', 'ABU_SIMBEL_CITY_FREE_GRANARY');
 INSERT INTO ModifierArguments (ModifierId, Name, Value) VALUES ('ABU_SIMBEL_CITY_FREE_GRANARY', 'BuildingType', 'BUILDING_GRANARY');
 
--- Grant free Maryannu Chariot Archer
-INSERT INTO Modifiers (ModifierId, ModifierType, RunOnce, Permanent) VALUES	('ABU_SIMBEL_GRANT_MARYANNU',	'MODIFIER_SINGLE_CITY_GRANT_UNIT_IN_CITY', 1, 1);
-
-INSERT INTO ModifierArguments (ModifierId, Name, Value) VALUES ('ABU_SIMBEL_GRANT_MARYANNU', 'UnitType', 'UNIT_EGYPTIAN_CHARIOT_ARCHER');
-INSERT INTO ModifierArguments (ModifierId, Name, Value) VALUES ('ABU_SIMBEL_GRANT_MARYANNU', 'Amount', '1');
-
---BuildingModifiers
 INSERT INTO BuildingModifiers (BuildingType, ModifierId) VALUES ('BUILDING_ABU_SIMBEL', 'ABU_SIMBEL_CITIES_FREE_GRANARY');
-INSERT INTO BuildingModifiers (BuildingType, ModifierId) VALUES ('BUILDING_ABU_SIMBEL', 'ABU_SIMBEL_GRANT_MARYANNU');
+
+-- Provides +2 Loyalty for cities with 6 tiles.
+INSERT INTO Requirements (RequirementId, RequirementType) VALUES	('REQUIRES_PLOT_HAS_ABU_SIMBEL_WITHIN_6',	'REQUIREMENT_PLOT_ADJACENT_BUILDING_TYPE_MATCHES');
+
+INSERT INTO RequirementArguments (RequirementId, Name, Value)
+VALUES	('REQUIRES_PLOT_HAS_ABU_SIMBEL_WITHIN_6',	'BuildingType',	'BUILDING_ABU_SIMBEL'),
+        ('REQUIRES_PLOT_HAS_ABU_SIMBEL_WITHIN_6',	'MaxRange',		6),
+        ('REQUIRES_PLOT_HAS_ABU_SIMBEL_WITHIN_6',	'MinRange',		0);
+
+INSERT INTO RequirementSets (RequirementSetId, RequirementSetType)
+VALUES	('ABU_SIMBEL_WITHIN_6_REQUIREMENTS',	'REQUIREMENTSET_TEST_ANY');
+
+INSERT INTO RequirementSetRequirements (RequirementSetId, RequirementId)
+VALUES	('ABU_SIMBEL_WITHIN_6_REQUIREMENTS',	'REQUIRES_PLOT_HAS_ABU_SIMBEL_WITHIN_6');
+
+INSERT INTO Modifiers (ModifierId, ModifierType, RunOnce, Permanent) VALUES ('ABU_SIMBEL_LOYALTY', 'MODIFIER_PLAYER_CITIES_ADJUST_IDENTITY_PER_TURN', 'ABU_SIMBEL_WITHIN_6_REQUIREMENTS');
+
+INSERT INTO ModifierArguments (ModifierId, Name, Value) VALUES ('ABU_SIMBEL_LOYALTY', 'Amount', '2');
+
+INSERT INTO BuildingModifiers (BuildingType, ModifierId) VALUES ('BUILDING_ABU_SIMBEL', 'ABU_SIMBEL_LOYALTY');

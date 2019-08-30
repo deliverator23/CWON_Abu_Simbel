@@ -8,16 +8,16 @@
 			<Text>Grants free Granary for every City including new Cities built afterwards. Provides +2 Loyalty for cities with 6 tiles. Must be constructed on Floodplains (Desert, Plains or Grassland).</Text>
 		</Row>
 		<Row Tag="LOC_BUILDING_ABU_SIMBEL_QUOTE">
-			<Text>"I give you, Ramessses II, constant harvests to feed the two lands at all times; the sheaves thereof are like sand, their granaries approach heaven and their grain heaps are like mountains." - inscription at Abu Simbel</Text>
+			<Text>"I give you, Ramessses II, constant harvests to feed the two lands at all times; the sheaves thereof are like sand, their granaries approach heaven and their grain heaps are like mountains." - inscription in Great Temple</Text>
 		</Row>
 		<Row Tag="LOC_PEDIA_WONDERS_PAGE_BUILDING_ABU_SIMBEL_CHAPTER_HISTORY_PARA_1">
-			<Text></Text>
+			<Text>The Abu Simbel temples are two massive rock temples at Abu Simbel, a village in Aswan Governorate, Upper Egypt, near the border with Sudan. They are situated on the western bank of Lake Nasser, about 230 km (140 mi) southwest of Aswan. The complex is part of the UNESCO World Heritage Site known as the "Nubian Monuments", which run from Abu Simbel downriver to Philae (near Aswan). The twin temples were originally carved out of the mountainside in the 13th century BC, during the 19th dynasty reign of the Pharaoh Ramesses II. They serve as a lasting monument to the king and his queen Nefertari, and commemorate his victory at the Battle of Kadesh. Their huge external rock relief figures have become iconic.</Text>
 		</Row>
 		<Row Tag="LOC_PEDIA_WONDERS_PAGE_BUILDING_ABU_SIMBEL_CHAPTER_HISTORY_PARA_2">
-			<Text></Text>
+			<Text>During his reign, Ramesses II embarked on an extensive building program throughout Egypt and Nubia, which Egypt controlled. Nubia was very important to the Egyptians because it was a source of gold and many other precious trade goods. He, therefore, built several grand temples there in order to impress upon the Nubians Egypt's might and Egyptianize the people of Nubia. The most famous temples are the rock-cut temples near the modern village of Abu Simbel, at the Second Nile Cataract, the border between Lower Nubia and Upper Nubia. There are two temples, the Great Temple, dedicated to Ramesses II himself, and the Small Temple, dedicated to his chief wife Queen Nefertari. Construction of the temple complex started in approximately 1264 BC and lasted for about 20 years, until 1244 BC. It was known as the "Temple of Ramesses, beloved by Amun".</Text>
 		</Row>
 		<Row Tag="LOC_PEDIA_WONDERS_PAGE_BUILDING_ABU_SIMBEL_CHAPTER_HISTORY_PARA_3">
-			<Text></Text>
+			<Text>The complex was relocated in its entirety in 1968 under the supervision of a Polish archaeologist, Kazimierz Michałowski, on an artificial hill made from a domed structure, high above the Aswan High Dam reservoir. The relocation of the temples was necessary or they would have been submerged during the creation of Lake Nasser, the massive artificial water reservoir formed after the building of the Aswan High Dam on the River Nile.</Text>
 		</Row>
 	</EnglishText>
 </GameData>

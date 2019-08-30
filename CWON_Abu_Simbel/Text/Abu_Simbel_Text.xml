@@ -5,7 +5,7 @@
 			<Text>Abu Simbel</Text>
 		</Row>
 		<Row Tag="LOC_BUILDING_ABU_SIMBEL_DESCRIPTION">
-			<Text>Grants free Granary for every City. Grants free Maryannu Chariot Archer. Must be constructed on Floodplains (Desert, Plains or Grassland).</Text>
+			<Text>Grants free Granary for every City including new Cities built afterwards. Provides +2 Loyalty for cities with 6 tiles. Must be constructed on Floodplains (Desert, Plains or Grassland).</Text>
 		</Row>
 		<Row Tag="LOC_BUILDING_ABU_SIMBEL_QUOTE">
 			<Text>"I give you, Ramessses II, constant harvests to feed the two lands at all times; the sheaves thereof are like sand, their granaries approach heaven and their grain heaps are like mountains." - inscription at Abu Simbel</Text>

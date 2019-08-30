@@ -29,12 +29,12 @@
 <Element>
 <m_Name text="Abu_Simbel"/>
 <m_nFirstPrim>0</m_nFirstPrim>
-<m_nPrims>5962</m_nPrims>
+<m_nPrims>5952</m_nPrims>
 </Element>
 </m_Groups>
 <m_nBoundBoneCount>1</m_nBoundBoneCount>
-<m_nPrimitiveCount>5962</m_nPrimitiveCount>
-<m_nVertexCount>4754</m_nVertexCount>
+<m_nPrimitiveCount>5952</m_nPrimitiveCount>
+<m_nVertexCount>4740</m_nVertexCount>
 </Element>
 <Element>
 <m_Name text="Petra_RocksMain"/>
@@ -55,12 +55,12 @@
 <Element>
 <m_Name text="Abu_Pyramids"/>
 <m_nFirstPrim>0</m_nFirstPrim>
-<m_nPrims>718</m_nPrims>
+<m_nPrims>604</m_nPrims>
 </Element>
 </m_Groups>
 <m_nBoundBoneCount>1</m_nBoundBoneCount>
-<m_nPrimitiveCount>718</m_nPrimitiveCount>
-<m_nVertexCount>1036</m_nVertexCount>
+<m_nPrimitiveCount>604</m_nPrimitiveCount>
+<m_nVertexCount>1001</m_nVertexCount>
 </Element>
 </m_Meshes>
 <m_Bones>

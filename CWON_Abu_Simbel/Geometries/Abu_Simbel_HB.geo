@@ -42,12 +42,12 @@
 <Element>
 <m_Name text="Abu_Pyramids"/>
 <m_nFirstPrim>0</m_nFirstPrim>
-<m_nPrims>718</m_nPrims>
+<m_nPrims>604</m_nPrims>
 </Element>
 </m_Groups>
 <m_nBoundBoneCount>1</m_nBoundBoneCount>
-<m_nPrimitiveCount>718</m_nPrimitiveCount>
-<m_nVertexCount>1036</m_nVertexCount>
+<m_nPrimitiveCount>604</m_nPrimitiveCount>
+<m_nVertexCount>1001</m_nVertexCount>
 </Element>
 </m_Meshes>
 <m_Bones>

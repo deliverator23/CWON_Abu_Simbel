@@ -65,11 +65,11 @@
 							<m_ParamName text="bAlignWithRiver"/>
 						</Element>
 						<Element class="AssetObjects..IntValue">
-							<m_nValue>1</m_nValue>
+							<m_nValue>7</m_nValue>
 							<m_ParamName text="MinVisualProgress"/>
 						</Element>
 						<Element class="AssetObjects..IntValue">
-							<m_nValue>89</m_nValue>
+							<m_nValue>87</m_nValue>
 							<m_ParamName text="MaxVisualProgress"/>
 						</Element>
 						<Element class="AssetObjects..IntValue">

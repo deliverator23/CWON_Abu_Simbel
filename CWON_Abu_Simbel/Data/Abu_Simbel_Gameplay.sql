@@ -6,6 +6,11 @@ INSERT INTO Buildings (BuildingType, Name, Description, PrereqCivic, Cost, Housi
 VALUES ('BUILDING_ABU_SIMBEL', 'LOC_BUILDING_ABU_SIMBEL_NAME', 'LOC_BUILDING_ABU_SIMBEL_DESCRIPTION', 'CIVIC_CRAFTSMANSHIP', 180, 2, 'ADVISOR_GENERIC', 1, 1, 1, 'ERA_INDUSTRIAL', 'LOC_BUILDING_ABU_SIMBEL_QUOTE');
 
 --Building_ValidTerrains; Must be constructed on Floodplains (Desert, Plains or Grassland).
+INSERT INTO Building_ValidTerrains (BuildingType, TerrainType) SELECT 'BUILDING_ABU_SIMBEL', TerrainType FROM Terrains WHERE TerrainType = 'TERRAIN_GRASS';
+INSERT INTO Building_ValidTerrains (BuildingType, TerrainType) SELECT 'BUILDING_ABU_SIMBEL', TerrainType FROM Terrains WHERE TerrainType = 'TERRAIN_PLAINS';
+INSERT INTO Building_ValidTerrains (BuildingType, TerrainType) SELECT 'BUILDING_ABU_SIMBEL', TerrainType FROM Terrains WHERE TerrainType = 'TERRAIN_DESERT';
+
+--Building_ValidTerrains; Must be constructed on Floodplains (Desert, Plains or Grassland).
 INSERT INTO Building_ValidFeatures (BuildingType, FeatureType) SELECT 'BUILDING_ABU_SIMBEL', FeatureType FROM Features WHERE FeatureType = 'FEATURE_FLOODPLAINS';
 INSERT INTO Building_ValidFeatures (BuildingType, FeatureType) SELECT 'BUILDING_ABU_SIMBEL', FeatureType FROM Features WHERE FeatureType = 'FEATURE_FLOODPLAINS_PLAINS';
 INSERT INTO Building_ValidFeatures (BuildingType, FeatureType) SELECT 'BUILDING_ABU_SIMBEL', FeatureType FROM Features WHERE FeatureType = 'FEATURE_FLOODPLAINS_GRASSLAND';
@@ -36,7 +41,7 @@ VALUES	('ABU_SIMBEL_WITHIN_6_REQUIREMENTS',	'REQUIREMENTSET_TEST_ANY');
 INSERT INTO RequirementSetRequirements (RequirementSetId, RequirementId)
 VALUES	('ABU_SIMBEL_WITHIN_6_REQUIREMENTS',	'REQUIRES_PLOT_HAS_ABU_SIMBEL_WITHIN_6');
 
-INSERT INTO Modifiers (ModifierId, ModifierType, RunOnce, Permanent) VALUES ('ABU_SIMBEL_LOYALTY', 'MODIFIER_PLAYER_CITIES_ADJUST_IDENTITY_PER_TURN', 'ABU_SIMBEL_WITHIN_6_REQUIREMENTS');
+INSERT INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId) VALUES ('ABU_SIMBEL_LOYALTY', 'MODIFIER_PLAYER_CITIES_ADJUST_IDENTITY_PER_TURN', 'ABU_SIMBEL_WITHIN_6_REQUIREMENTS');
 
 INSERT INTO ModifierArguments (ModifierId, Name, Value) VALUES ('ABU_SIMBEL_LOYALTY', 'Amount', '2');
 

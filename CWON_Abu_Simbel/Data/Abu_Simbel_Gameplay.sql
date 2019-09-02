@@ -6,14 +6,9 @@ INSERT INTO Buildings (BuildingType, Name, Description, PrereqCivic, Cost, Housi
 VALUES ('BUILDING_ABU_SIMBEL', 'LOC_BUILDING_ABU_SIMBEL_NAME', 'LOC_BUILDING_ABU_SIMBEL_DESCRIPTION', 'CIVIC_CRAFTSMANSHIP', 180, 2, 'ADVISOR_GENERIC', 1, 1, 1, 'ERA_INDUSTRIAL', 'LOC_BUILDING_ABU_SIMBEL_QUOTE');
 
 --Building_ValidTerrains; Must be constructed on Floodplains (Desert, Plains or Grassland).
-INSERT INTO Building_ValidTerrains (BuildingType, TerrainType) SELECT 'BUILDING_ABU_SIMBEL', TerrainType FROM Terrains WHERE TerrainType = 'TERRAIN_GRASS';
-INSERT INTO Building_ValidTerrains (BuildingType, TerrainType) SELECT 'BUILDING_ABU_SIMBEL', TerrainType FROM Terrains WHERE TerrainType = 'TERRAIN_PLAINS';
-INSERT INTO Building_ValidTerrains (BuildingType, TerrainType) SELECT 'BUILDING_ABU_SIMBEL', TerrainType FROM Terrains WHERE TerrainType = 'TERRAIN_DESERT';
-
---Building_ValidTerrains; Must be constructed on Floodplains (Desert, Plains or Grassland).
-INSERT INTO Building_ValidFeatures (BuildingType, FeatureType) SELECT 'BUILDING_ABU_SIMBEL', FeatureType FROM Features WHERE FeatureType = 'FEATURE_FLOODPLAINS';
-INSERT INTO Building_ValidFeatures (BuildingType, FeatureType) SELECT 'BUILDING_ABU_SIMBEL', FeatureType FROM Features WHERE FeatureType = 'FEATURE_FLOODPLAINS_PLAINS';
-INSERT INTO Building_ValidFeatures (BuildingType, FeatureType) SELECT 'BUILDING_ABU_SIMBEL', FeatureType FROM Features WHERE FeatureType = 'FEATURE_FLOODPLAINS_GRASSLAND';
+INSERT INTO Building_RequiredFeatures (BuildingType, FeatureType) SELECT 'BUILDING_ABU_SIMBEL', FeatureType FROM Features WHERE FeatureType = 'FEATURE_FLOODPLAINS';
+INSERT INTO Building_RequiredFeatures (BuildingType, FeatureType) SELECT 'BUILDING_ABU_SIMBEL', FeatureType FROM Features WHERE FeatureType = 'FEATURE_FLOODPLAINS_PLAINS';
+INSERT INTO Building_RequiredFeatures (BuildingType, FeatureType) SELECT 'BUILDING_ABU_SIMBEL', FeatureType FROM Features WHERE FeatureType = 'FEATURE_FLOODPLAINS_GRASSLAND';
 
 --Building_YieldChanges; +2 Faith
 INSERT INTO Building_YieldChanges (BuildingType, YieldType, YieldChange) VALUES ('BUILDING_ABU_SIMBEL', 'YIELD_FAITH', 2);

@@ -18,7 +18,7 @@
 					</Element>
 					<Element>
 						<m_SlotName text="REVEAL_A"/>
-						<m_AnimationName text="WON_Petra_Wonder_Movie"/>
+						<m_AnimationName text="WON_Hermitage_Movie"/>
 					</Element>
 				</m_Bindings>
 			</m_animationBindings>
@@ -47,7 +47,7 @@
 					<Element>
 						<m_Name text="REVEAL_A"/>
 						<m_Description text=""/>
-						<m_AnimationName text="WON_Petra_Wonder_Movie"/>
+						<m_AnimationName text="WON_Hermitage_Movie"/>
 						<m_fDuration>0.000000</m_fDuration>
 						<m_Triggers>
 							<Element>
@@ -522,8 +522,8 @@
 	<m_GeometrySet>
 		<m_ModelInstances>
 			<Element>
-				<m_Name text="Petra_Camera"/>
-				<m_GeoName text="Petra_Camera"/>
+				<m_Name text="WON_Hermitage_Movie_Camera"/>
+				<m_GeoName text="WON_Hermitage_Movie_Camera"/>
 				<m_GroupStates/>
 			</Element>
 			<Element>

@@ -18,7 +18,7 @@
     <CompatibleVersions>1.2,2.0</CompatibleVersions>
     <AssemblyName>CWON_Abu_Simbel</AssemblyName>
     <RootNamespace>CWON_Abu_Simbel</RootNamespace>
-    <InGameActionData><![CDATA[<InGameActions><UpdateArt id="Abu_Art"><File>(Mod Art Dependency File)</File></UpdateArt><UpdateDatabase id="Abu_DB"><File>Data/Abu_Simbel_Gameplay.sql</File></UpdateDatabase><UpdateIcons id="Abu_Icons"><File>Icons/Abu_Simbel_Icons.xml</File></UpdateIcons><UpdateText id="Abu_Text"><File>Text/Abu_Simbel_Text.xml</File></UpdateText></InGameActions>]]></InGameActionData>
+    <InGameActionData><![CDATA[<InGameActions><UpdateArt id="Abu_Art"><File>(Mod Art Dependency File)</File></UpdateArt><UpdateDatabase id="Abu_DB"><Properties><LoadOrder>10</LoadOrder></Properties><File>Data/Abu_Simbel_Gameplay.sql</File></UpdateDatabase><UpdateIcons id="Abu_Icons"><File>Icons/Abu_Simbel_Icons.xml</File></UpdateIcons><UpdateText id="Abu_Text"><File>Text/Abu_Simbel_Text.xml</File></UpdateText></InGameActions>]]></InGameActionData>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Default' ">
     <OutputPath>.</OutputPath>

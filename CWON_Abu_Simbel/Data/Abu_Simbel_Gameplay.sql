@@ -3,7 +3,7 @@ INSERT INTO Types (Type, Kind) VALUES ('BUILDING_ABU_SIMBEL', 'KIND_BUILDING');
 
 --Buildings; +2 Housing
 INSERT INTO Buildings (BuildingType, Name, Description, PrereqCivic, Cost, Housing, AdvisorType, MaxWorldInstances, IsWonder, RequiresPlacement, ObsoleteEra, Quote)
-VALUES ('BUILDING_ABU_SIMBEL', 'LOC_BUILDING_ABU_SIMBEL_NAME', 'LOC_BUILDING_ABU_SIMBEL_DESCRIPTION', 'CIVIC_CRAFTSMANSHIP', 180, 2, 'ADVISOR_GENERIC', 1, 1, 1, 'ERA_INDUSTRIAL', 'LOC_BUILDING_ABU_SIMBEL_QUOTE');
+VALUES ('BUILDING_ABU_SIMBEL', 'LOC_BUILDING_ABU_SIMBEL_NAME', 'LOC_BUILDING_ABU_SIMBEL_DESCRIPTION', 'CIVIC_CRAFTSMANSHIP', 240, 2, 'ADVISOR_GENERIC', 1, 1, 1, 'ERA_INDUSTRIAL', 'LOC_BUILDING_ABU_SIMBEL_QUOTE');
 
 --Building_ValidTerrains; Must be constructed on Floodplains (Desert, Plains or Grassland).
 INSERT INTO Building_RequiredFeatures (BuildingType, FeatureType) SELECT 'BUILDING_ABU_SIMBEL', FeatureType FROM Features WHERE FeatureType = 'FEATURE_FLOODPLAINS';
